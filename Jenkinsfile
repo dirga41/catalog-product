@@ -16,7 +16,7 @@ stage('Notify Discord') {
                         acceptType: 'APPLICATION_JSON',
                         contentType: 'APPLICATION_JSON',
                         requestBody: groovy.json.JsonOutput.toJson(message),
-                        url: DISCORD_WEBHOOK
+                        url: https://discordapp.com/api/webhooks/1320956958429417544/u7p-SDi064-7lnW7xB_xkqwYXfbim9HNXDvC6gxBYN7oOjFm9k8h-9qUl5SroklsSKp2
                     )
                 }
             }
@@ -42,6 +42,6 @@ stage('Notify Discord') {
                     acceptType: 'APPLICATION_JSON',
                     contentType: 'APPLICATION_JSON',
                     requestBody: groovy.json.JsonOutput.toJson(message),
-                    url: DISCORD_WEBHOOK
+                    url: https://discordapp.com/api/webhooks/1320956958429417544/u7p-SDi064-7lnW7xB_xkqwYXfbim9HNXDvC6gxBYN7oOjFm9k8h-9qUl5SroklsSKp2
                 )
 }
