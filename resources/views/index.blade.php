@@ -13,8 +13,8 @@
         <div class="logo"><h1>Chanies</h1></div>
         <ul class="menu">
             <li><a href="" class="active">Home</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">About Us</a></li>
+            <li><a href="#Products">Products</a></li>
+            <li><a href="#About">About Us</a></li>
             <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
         </ul>
 
@@ -23,15 +23,17 @@
         </div>
     </nav>
 
-    <section class="content">
+    <section class="content" >
         <h1>Chanies</h1>
         <p>Get The Best Dimsum in Town</p>
     </section>
 
+    <section id="Products"></section>
     <h1 class="pheading">Katalog Produk</h1>
     <h2 class="pheading">Produk Matang</h2>
 
     <section class="sec">
+        
         <div class="products">
 
             <div class="card">
@@ -134,13 +136,30 @@
                     <div class="price">Rp.30.000</div>
                     {{-- <button class="btn">Buy Now</button> --}}
                 </div>
+               
             </div>
+
+
         </div>
     </section>
 
 
     <footer>
-        <p>Dirga yang buat anjay, ngeri banget loch</p>
+        <section id="About"></section>
+        <h2>Informasi Owner</h2>
+        <div style="display: flex; justify-content: center; align-items: center; height: 10vh; text-align: center;">
+    <a href="https://wa.me/628123456789?text=Halo%20saya%20ingin%20bertanya" 
+       style="display: inline-block; padding: 10px 20px; background-color: #25D366; color: white; text-decoration: none; border-radius: 5px; font-family: Arial, sans-serif;">
+       Hubungi Kami di WhatsApp
+    </a>
+    <a href="{{ route('about') }}" 
+   style="display: inline-block; padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;">
+   Lokasi Kami
+</a>
+
+</div>
+
+
     </footer>
 
     <script>

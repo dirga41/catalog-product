@@ -61,7 +61,7 @@ body{
 }
 
 .content{
-    background-image: (url(img/bg1.jpg));
+    background-image: url(/resources/img/bg1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0 5%;
@@ -69,7 +69,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: #424144;
+    color: #f3f4f6;
     height: 100vh;
 }
 
@@ -157,10 +157,10 @@ body{
 
 footer{
     background-color: #f3f4f6;
-    height: 10vh;
+    height: 20vh;
 }
 
-footer p{
+footer h2{
     text-align: center;
     line-height: 10vh;
 }
