@@ -1,4 +1,19 @@
-stage('Notify Discord') {
+pipeline {
+    agent any
+    environment {
+        DOCKER_IMAGE = 'my-docker-image'
+    }
+    stages {
+        stage('Build') {
+            steps {
+                script {
+                    echo "Building Docker image..."
+                    // Proses build docker di sini
+                }
+            }
+        }
+
+        stage('Notify Discord') {
             steps {
                 script {
                     def message = [
@@ -11,19 +26,18 @@ stage('Notify Discord') {
                             ]
                         ]
                     ]
+                    // Perhatikan penulisan url dan gunakan tanda kutip yang benar
                     httpRequest(
                         httpMode: 'POST',
                         acceptType: 'APPLICATION_JSON',
                         contentType: 'APPLICATION_JSON',
                         requestBody: groovy.json.JsonOutput.toJson(message),
-                        url: https://discordapp.com/api/webhooks/1320956958429417544/u7p-SDi064-7lnW7xB_xkqwYXfbim9HNXDvC6gxBYN7oOjFm9k8h-9qUl5SroklsSKp2
+                        url: 'https://discordapp.com/api/webhooks/1320956958429417544/u7p-SDi064-7lnW7xB_xkqwYXfbim9HNXDvC6gxBYN7oOjFm9k8h-9qUl5SroklsSKp2'
                     )
                 }
             }
         }
-       
-                   
-
+    }
     post {
         failure {
             script {
@@ -37,11 +51,15 @@ stage('Notify Discord') {
                         ]
                     ]
                 ]
+                // Perhatikan penulisan url dan gunakan tanda kutip yang benar
                 httpRequest(
                     httpMode: 'POST',
                     acceptType: 'APPLICATION_JSON',
                     contentType: 'APPLICATION_JSON',
                     requestBody: groovy.json.JsonOutput.toJson(message),
-                    url: https://discordapp.com/api/webhooks/1320956958429417544/u7p-SDi064-7lnW7xB_xkqwYXfbim9HNXDvC6gxBYN7oOjFm9k8h-9qUl5SroklsSKp2
+                    url: 'https://discordapp.com/api/webhooks/1320956958429417544/u7p-SDi064-7lnW7xB_xkqwYXfbim9HNXDvC6gxBYN7oOjFm9k8h-9qUl5SroklsSKp2'
                 )
+            }
+        }
+    }
 }
