@@ -171,7 +171,31 @@ footer p a{
     font-weight: bold;
 }
 
+#deskripsi {
+    max-width: 50%;
+}
 
+#About {
+    text-align: center;
+}
+#owner-info {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-item {
+    flex: 1;
+    margin: 10px;
+}
 /* Responsive web */
 
 @media (max-width:  820px){
