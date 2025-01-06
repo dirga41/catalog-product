@@ -36,10 +36,10 @@
         <p>Get The Best Dimsum in Town</p>
     </section>
 
-    <section id="Products"></section>
-    <h1 class="pheading">Katalog Produk</h1>
-    <h2 class="pheading">Produk Matang</h2>
-
+    <section class="katalog">
+        <h1>Katalog Produk</h1>
+        <h2>Produk Matang</h2>
+    </section>
     <section class="sec">
 
         <div class="products">
@@ -78,7 +78,11 @@
             </div>
         </div>
     </section>
-    <h2 class="pheading">Produk Frozen</h2>
+
+    <section class="katalog2">
+        <h2>Produk Frozen</h2>
+    </section>
+    
     <section class="sec">
         <div class="products">
 
@@ -156,11 +160,17 @@
         </div>
     </section>
 
+    <div class="h2">
+        <H2>About Us</H2>
+    </div>
 
     <footer>
         <section class="footer-container">
+            
+           
+
             <div class="footer-item">
-                <h2>Lokasi</h2>
+                <!-- <h2>Lokasi</h2> -->
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.7469952254023!2d112.66578840000001!3d-7.269605899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7ff1955cedaa5%3A0x61d4ed29f825703d!2sAyam%20geprek%20klasik!5e0!3m2!1sid!2sid!4v1735008927961!5m2!1sid!2sid"
                     width="100%" height="250" style="border: 0;" allowfullscreen="" loading="lazy"
@@ -169,10 +179,10 @@
             </div>
 
             <div class="footer-item">
-                <h2>Deskripsi</h2>
+                <!-- <h2>Deskripsi</h2> -->
                 <p>UMKM Chanies Dimsum dan Frozen Food yang berlokasi di Jl. Manukan Tama No.27 No.21k, Manukan Kulon, Kec. Tandes, Surabaya, Jawa Timur 60185 didirikan dengan visi untuk menyediakan makanan sehat yang bebas dari MSG, khususnya bagi kalangan lanjut usia yang ingin menikmati produk frozen food tanpa mengorbankan nilai gizi. Dalam upaya memenuhi kebutuhan konsumen yang semakin sadar akan pentingnya kesehatan, usaha ini berkomitmen untuk menyajikan produk berkualitas tinggi yang tetap lezat dan bergizi. Sejak berdiri selama 2,5 tahun, Chanies telah berhasil menarik perhatian konsumen dengan fokus pada kualitas dan kesehatan, menjadikannya pilihan yang tepat bagi mereka yang peduli akan asupan makanan.</p>
                 <div id="owner-info" style="margin-top: 20px;">
-                    <h2>Informasi Owner</h2>
+                    <!-- <h2>Informasi Owner</h2> -->
                     <a href="https://wa.me/628123456789?text=Halo%20saya%20ingin%20bertanya"
                         style="display: inline-block; padding: 10px 20px; background-color: #25D366; color: white; text-decoration: none; border-radius: 5px; font-family: Arial, sans-serif;">
                         Hubungi Kami di WhatsApp

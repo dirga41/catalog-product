@@ -61,7 +61,7 @@ body{
 }
 
 .content{
-    background-image: url(/resources/img/bg1.jpg);
+    background-image: url(/resources/img/bg2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0 5%;
@@ -71,27 +71,47 @@ body{
     align-items: flex-start;
     color: #f3f4f6;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .content h1{
-    font-size: 40px;
+    font-size: 80px;
+    color: white;
 }
 
 .content p{
-    font-size: 20px;
+    font-size: 40px;
     margin-top: 20px;
+    color: white;
 }
 
-.pheading{
+.katalog{
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
-    margin: 50px 0;
-    color: #424144;
+    background-color: #557c56;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+}
+
+.katalog2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: #557c56;
+    align-items: center;
+    font-size: 25px;
+    color: white;
 }
 
 /* Products */
 
 .sec{
     padding: 10px 5%;
+    background-color: #557c56;
+
 }
 
 .products{
@@ -169,6 +189,13 @@ footer p a{
     text-decoration: none;
     color: #f63e4e;
     font-weight: bold;
+}
+
+.h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 25px;
 }
 
 #deskripsi {
